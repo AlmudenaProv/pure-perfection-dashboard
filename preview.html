@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provalliance — Launch Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#142239;
+  --navy-2:#213552;
+  --blue:#3767a6;
+  --bg:#f7f6f3;
+  --line:#d9dee7;
+  --muted:#7b8493;
+  --white:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  min-height:100%;
+  font-family:"Public Sans",Arial,sans-serif;
+  background:var(--bg);
+  color:var(--navy);
+}
+body{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+}
+.cover{
+  width:min(1180px,100%);
+  min-height:720px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.inner{
+  width:min(760px,100%);
+  text-align:center;
+}
+.kicker{
+  display:block;
+  margin-bottom:28px;
+  color:var(--blue);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+.rule{
+  width:48px;
+  height:2px;
+  margin:0 auto 42px;
+  background:var(--blue);
+}
+.brand{
+  margin:0;
+  font-size:68px;
+  line-height:1;
+  font-weight:300;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:var(--navy);
+}
+.subtitle{
+  margin:24px 0 0;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+.cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin-top:54px;
+  min-width:360px;
+  padding:17px 28px;
+  border:1.5px solid var(--blue);
+  color:var(--navy);
+  background:transparent;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+  transition:.2s ease;
+}
+.cta:hover{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+  transform:translateY(-1px);
+}
+.arrow{
+  font-size:18px;
+  line-height:1;
+}
+.footer{
+  margin-top:22px;
+  color:#9aa2af;
+  font-size:11px;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+}
+@media(max-width:760px){
+  body{padding:18px}
+  .cover{min-height:640px}
+  .brand{font-size:42px;letter-spacing:3px}
+  .kicker{font-size:11px;letter-spacing:2.5px}
+  .subtitle{font-size:12px}
+  .cta{min-width:0;width:100%}
+}
+</style>
+</head>
+<body>
+<main class="cover">
+  <div class="inner">
+    <span class="kicker">Lanzamientos Provalliance</span>
+    <div class="rule"></div>
+
+    <h1 class="brand">Provalliance</h1>
+    <p class="subtitle">Launch Control</p>
+
+    <a class="cta" href="dashboard.html">
+      <span>Acceder al dashboard</span>
+      <span class="arrow">→</span>
+    </a>
+
+    <div class="footer">Herramienta de gestión de lanzamientos</div>
+  </div>
+</main>
+</body>
+</html>
